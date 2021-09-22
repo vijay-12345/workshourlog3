@@ -1,0 +1,354 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Plutext PDF Converter - Online test</title>
+    <script async custom-element="amp-analytics"
+    src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="canonical" href="https://converter-eval.plutext.com/index.html" />
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://converter-eval.plutext.com/index.html"
+        },        
+        "headline": "High performance Word (doc/docx) to PDF Converter",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://converter-eval.plutext.com/logo-75.png",
+            "height": 75,
+            "width": 57
+        },        
+        "datePublished": "2015-10-07T12:02:41Z",
+        "dateModified": "2018-10-03T12:02:41Z",
+        "author": {
+            "@type": "Person",
+            "name": "Jason Harrop"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Plutext Pty Ltd",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://converter-eval.plutext.com/logo_256.png",
+                "height": 60,
+                "width": 60
+                }            
+            }        
+            }
+    </script> <!-- logo height must be 60, or https://search.google.com/structured-data/testing-tool complains.  Width is flexible -->
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <style amp-custom>
+        /* any custom style goes here */
+        body {
+            font-family: "Lato", arial, sans-serif;
+            font-size: 22px;
+            color:black;
+            width:100%;
+            word-wrap: break-word;
+        }
+        a {
+            color:inherit;
+            text-decoration: underline;
+            font-weight: inherit;
+            word-wrap: break-word;
+        }
+        amp-img {
+            background-color: white;
+        }
+        #nd_header {
+            box-sizing: border-box; max-width: 768px;
+            margin-top: 0px; margin-bottom: 0px;
+            margin-left: auto; margin-right: auto;
+            padding-top: 10px; padding-bottom: 1.5em;
+            padding-left: 10px; padding-right: 10px;
+        }
+        #nd_breadcrumb {
+            float: right;
+        }
+        .nd_breadcrumb {
+            color:#0b649d;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 0px;
+            padding-left: 15px; padding-right: 0px;
+            padding-top: 15px; padding-bottom: 0px;
+        }
+
+        #nd_teaser {
+            box-sizing: border-box; max-width: 768px;
+            margin-top: 0px; margin-bottom: 0px;
+            margin-left: auto; margin-right: auto;
+            padding-top: 40px; padding-bottom: 40px;
+            padding-left: 20px; padding-right: 20px;
+            font-size: 18px;
+        }
+        h1.nd_teaser {
+            font-family: "Montserrat", sans-serif;
+            font-weight: bold;
+            font-size: 28px;
+            color: #fff;
+            margin: 0px;
+            padding: 0px;
+        }
+        a.nd_teaser {
+            color: #fff;
+        }
+        p.nd_teaser {
+            font-weight: normal;
+            font-size: 18px;
+            color: #fff;
+        }        
+        ul.nd_teaser {
+            font-weight: normal;
+            font-size: 18px;
+            color: #fff;
+        }
+        li.nd_teaser {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        em.nd_teaser {
+            font-style: normal;
+            font-weight: bold;
+        }
+
+
+        div.nd_article {
+            box-sizing: border-box; max-width: 768px; overflow-x: hidden;
+            margin-top: 20px; margin-bottom: 10px;
+            margin-left: auto; margin-right: auto;
+            padding-left: 10px; padding-right: 10px;
+            padding-top: 10px; padding-bottom: 10px;
+            font-size: 18px;
+        }
+        h1.nd_article {
+            font-family: "Montserrat", sans-serif;
+            font-weight: bold;
+            font-size: 28px;
+            margin: 0px;
+            padding-top: 0px; padding-bottom: 5px;
+            padding-left: 0px; padding-right: 0px;
+        }
+
+        div.nd_chat {
+            overflow-x: auto;
+            outline: 5px solid rgb(30, 139, 190);
+            margin: 0px;
+            padding: 10px;
+            font-family:'Times New Roman', serif;
+        }
+        p.nd_chat {
+            margin-left: 0px; margin-right: 0px; margin-top: 2.5px; margin-bottom: 2.5px;
+            padding: 0px;
+        }
+        a.nd_ndoc {
+        }
+        #nd_footer {
+            box-sizing: border-box; max-width: 768px;
+
+            margin-top: 0px; margin-bottom: 0px;
+            margin-left: auto; margin-right: auto;
+            padding-left: 10px; padding-right: 10px;
+            text-align: center;
+        }
+        #nd_header_stripe {
+            background:white; box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+        }
+        #nd_teaser_stripe {
+            background: rgb(30, 139, 190); color: white; /* min-height: 500px; */
+        }
+        div.nd_stripe {
+            background: rgb(30, 139, 190); color: white; padding-top: 20px; padding-bottom: 20px;
+        }
+        #nd_footer_stripe {
+            background: rgb(30, 139, 190); color: white; padding-top: 20px; padding-bottom: 20px;
+        }
+        del {
+            text-decoration: line-through;
+        }
+        ins {
+            text-decoration: underline;
+        }
+
+        pre { 
+            font: 100% courier,monospace; border: 1px solid #ccc; 
+            /* overflow: auto; overflow-x: scroll; */
+            width: 90%; 
+            padding: 0 1em 1em 1em; 
+            margin: 1em auto 2em auto; background: #fff7f0; color: #000 
+        }
+    </style>
+  </head>
+<body>
+
+    <div id="nd_header_stripe">
+        <div id="nd_header">
+            <amp-img src="//www.plutext.com/logo-75.png" alt="Plutext Logo" height="75" width="57"></amp-img> Plutext
+            <span id="nd_breadcrumb">
+                <span class="nd_breadcrumb"><a href="<!--NAVX_HREF-->" class="nd_breadcrumb"><!--NAVX--></a></span>
+            </span>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div id="nd_teaser_stripe">
+        <div id="nd_teaser">
+            <h1 class="nd_teaser" id="id_scope">Plutext Word to PDF Converter</h1>
+            <p>Plutext's Word to PDF Converter is a on-premises server/service you can use in your application 
+            to programmatically convert or export Microsoft Word doc/docx files to PDF.</p>
+
+<p style="border:3px; border-style:solid; border-color:#FF0000; padding: 1em; color: red;">Please note: This product has been discontinued and is no longer available for purchase. </p> 
+
+            <p>Highlights:</p>
+
+            <ul class="nd_teaser">
+
+              <li class="nd_teaser">aims to mimic Word's layout (high fidelity)</li>
+
+              <li class="nd_teaser">uses suitable <a href="fonts.html">fonts</a> </li>
+              
+              <li class="nd_teaser">produces <a href="pdf_archive.html">PDF/A-2b</a> compliant output (if set to do so)</li>
+
+              <li class="nd_teaser">is simple to install (especially compared to SharePoint, LibreOffice etc)</li>
+
+              <li class="nd_teaser">is fast (and multithreaded)</li>
+
+              <li class="nd_teaser">is frugal with resources</li>
+
+              <li class="nd_teaser">is secure (strict separation of conversion jobs)</li>
+
+              <li class="nd_teaser">runs as an operating system service (or via Docker).</li>
+
+            </ul>
+            
+        </div>
+    </div>
+
+
+
+<!--
+<div class="nd_article">
+    <h1 class="nd_article" >To try your docx now, please <a href="/test_online.html">click here</a></h1>
+</div>
+-->
+
+<div class="nd_article">
+    <h1 class="nd_article" >News</h1>
+
+            <ul >
+            
+             <li >5 August 2019: 2.2-16 releases for <a href="server_convert_docx_to_PDF_Windows.html">Windows</a> and <a href="server_convert_docx_to_PDF_Linux.html">Linux</a> available (if no italics font face, simulate with skew)</li>
+
+             <li >2 July 2019: 2.2-15 release for <a href="server_convert_docx_to_PDF_Linux.html">Linux</a> available (table cell character wrapping regression; line break improvement) </li>
+             
+             <li >21 May 2019: 2.2-13 releases for <a href="server_convert_docx_to_PDF_Windows.html">Windows</a> and <a href="server_convert_docx_to_PDF_Linux.html">Linux</a> available</li>
+            
+             <li >16 May 2019: 2.2-12 releases for <a href="server_convert_docx_to_PDF_Windows.html">Windows</a> and <a href="server_convert_docx_to_PDF_Linux.html">Linux</a> available</li>
+            
+             <li >18 April 2019: 2.2-11 release for   
+<a href="server_convert_docx_to_PDF_Linux.html">Linux</a> available (supports doNotExpandShiftReturn)</li>             
+<li >29 Oct 2018: 2.2-8 releases for <a href="server_convert_docx_to_PDF_Docker.html">Docker</a> now available</li>
+             <li >25 Oct 2018: 2.2-8 release for   
+<a href="server_convert_docx_to_PDF_Linux.html">Linux</a> and  <a href="server_convert_docx_to_PDF_Windows.html">Windows</a> available (external hyperlink support)</li>
+             <li >6 Oct 2018: 2.2-4 releases for <a href="server_convert_docx_to_PDF_Docker.html">Docker</a> and  
+<a href="server_convert_docx_to_PDF_Linux.html">Linux</a> available</li>
+
+             <li >29 Sept 2018: 2.2-3 release for <a href="server_convert_docx_to_PDF_Windows.html">Windows</a> (fixes pfont.c issue with exotic fonts)</li>
+
+             <li >17 Sept 2018: 2.2-1 releases for <a href="server_convert_docx_to_PDF_Windows.html">Windows</a>,  
+<a href="server_convert_docx_to_PDF_Linux.html">Linux</a> and <a href="https://converter-eval.plutext.com/server_convert_docx_to_PDF_Docker.html">Docker</a> available</li>
+
+             <li >14 Sept 2018: <a href="server_convert_docx_to_PDF_Windows.html">Windows 2.2.0 release</a> available (complex scripts such as Arabic and Hebrew; various layout enhancements)</li>
+
+              <li >28 June 2018: <a href="server_convert_docx_to_PDF_Linux.html">Linux 2.1-2 releases</a> available (fixes a numbering edge case)</li>
+              <li >18 June 2018: <a href="server_convert_docx_to_PDF_Windows.html">Windows 2.1-1 releases</a> available (support long documents by optimizing OS-specific resource allocations)</li>
+
+            </ul>
+
+</div>
+
+<div class="nd_article">
+    <h1 class="nd_article" >Server download </h1>
+
+            <ul >
+	      <li ><a href="server_convert_docx_to_PDF_Docker.html">Docker</a></li>
+              <li ><a href="server_convert_docx_to_PDF_Windows.html">Windows</a></li>
+              <li ><a href="server_convert_docx_to_PDF_Linux.html">Linux</a></li>
+<!--              
+              <li ><a href="server_convert_docx_to_PDF_Solaris.html">Solaris</a> or illumos-based distributions such as <a href="server_convert_docx_to_PDF_JoyentSmartOS.html">OmniOS, OpenIndiana, or Joyent&apos;s SmartOS</a></li> 
+              <li ><a href="server_convert_docx_to_PDF_AIX.html">AIX</a></li>  -->
+
+            </ul>
+
+</div>
+    
+	<div class="nd_article">
+    <h1 class="nd_article">Getting Started</h1>
+
+    <p class="nd_article">To test your installation, please see <a href="getting_started.html">Getting Started</a></p>
+    
+    </div>
+
+<div class="nd_article">
+    <h1 class="nd_article" >Client libraries</h1>
+
+            <p  class="nd_article">You convert a Word document by HTTP POSTing it to the server.</p>
+            <p  class="nd_article">For example:</p>
+
+            <ul >
+
+              <li ><a href="client_java.html">from Java</a></li>
+              <li ><a href="client_dotnet.html">from C#</a></li>
+              <li ><a href="client_php.html">from PHP</a></li>
+              <li ><a href="client_python.html">from Python</a></li>
+
+
+            </ul>
+
+</div>
+
+	<div class="nd_article">
+    <h1 class="nd_article">Problems?</h1>
+
+    <p class="nd_article">Please see <a href="troubleshooting.html">troubleshooting</a></p>
+    
+    </div>
+
+    <div id="nd_footer_stripe">
+        <div id="nd_footer">
+            <small class="nd_footer">Copyright © 2015-2018 Plutext Pty Ltd.</small>
+        </div>
+    </div>
+    
+<amp-analytics type="googleanalytics" id="analytics1">
+<script type="application/json">
+{
+  "vars": {
+    "account": "UA-296711-12"
+  },
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
+    }
+  }
+}
+</script>
+</amp-analytics>
+    
+</body>
+</html>

@@ -1,0 +1,8 @@
+#DirectoryIndex disabled
+RewriteEngine On
+
+#RewriteRule ^api/(.*)$ http://worklog.yiipro.com/api/$1 [P,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.html

@@ -1,0 +1,1 @@
+[26-Mar-2020 18:02:48 UTC] PHP Fatal error:  Allowed memory size of 1073741824 bytes exhausted (tried to allocate 32768 bytes) in /home/enuke/worklog.yiipro.com/workhourslog/storage/framework/views/cf1b74730f5b59716da3f7980db1b929cc7e0ff2.php on line 1
